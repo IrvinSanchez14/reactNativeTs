@@ -11,12 +11,13 @@
     "strict": true,
     "target": "esnext",
     "resolveJsonModule": true,
+    "baseUrl": ".",
     "paths": {
-      "_components": ["src/component"],
-      "_constants": ["src/constants"],
-      "_modules": ["src/modules"],
-      "_theme": ["src/theme"],
-      "_navigation": ["src/navigation"]
+      "_components*": ["src/components*"],
+      "_constants*": ["src/constants*"],
+      "_modules*": ["src/modules*"],
+      "_theme*": ["src/theme*"],
+      "_navigation/*": ["src/navigation/*"]
     }
   },
   "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.js"]
